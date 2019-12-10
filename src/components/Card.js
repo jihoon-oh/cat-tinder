@@ -11,6 +11,7 @@ class Card extends React.Component {
     return (
       <animated.div
         key={i}
+        className='transform1'
         style={{
           transform: interpolate(
             [x, y],
@@ -20,6 +21,7 @@ class Card extends React.Component {
       >
         <animated.div
           {...bind(i)}
+          className='transform2'
           style={{
             transform: interpolate([rot, scale], trans)
           }}

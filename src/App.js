@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import axios from 'axios';
 import Deck from "./components/Deck";
 import UploadButton from "./components/UploadButton";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "./sass/main.sass";
 
 class App extends Component {
 	// initialize our state
@@ -101,9 +103,9 @@ class App extends Component {
 
 	render() {
 		return (
-			<div>
+			<div id='page_wrapper'>
 				<Deck />
-				<UploadButton />
+				<UploadButton /> 
 			</div>
 		);
 	}
